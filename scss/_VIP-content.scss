@@ -1,6 +1,6 @@
 .vip {
   position: relative;
-  margin-top: 160px;
+  margin-top: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,13 +10,14 @@
   }
 
   .background-leaf__right {
-    width: 340px;
-    height: 305px;
+    width: 280px;
+    height: 250px;
     position: absolute;
     right: -30px;
-    transform: translateY(-25px) rotate(180deg);
-
+    transform: translateX(65px) translateY(-75px) rotate(180deg);
+    
     @media screen and (max-width: 500px) {
+        transform: translateX(10px) translateY(-35px) rotate(180deg);
       width: 110px;
       height: 100px;
       right: 0;
@@ -29,20 +30,24 @@
 
   .background-leaf__left {
     position: absolute;
-    width: 310px;
-    height: 280px;
-    left: -32px;
-    transform: translateY(200px);
+    width: 280px;
+    height: 250px;
+    left: 0;
+    transform: translateX(-100px) translateY(-90px) scaleY(1.1) scaleX(0.9);
     z-index: -1;
 
+    img {
+      width: 100%;
+      height: 100%;
+    }
     @media screen and (max-width: 500px) {
       visibility: hidden;
     }
   }
 
   &-content {
-    width: 92%;
-    height: 440px;
+    width: 84%;
+    height: 270px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,12 +58,12 @@
     padding: 30px 0;
 
     @media screen and (max-width: 500px) {
-      width: 90%;
-      height: 460px;
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-      padding: 20px;
-      align-items: start;
-      border-radius: 40px;
+        width: 90%;
+        height: 220px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        padding: 20px;
+        border-radius: 40px;
+        text-align: center;
     }
 
     &__title {
@@ -71,14 +76,13 @@
     }
 
     &__text {
-      padding: 30px 15px 10px;
+      padding: 30px 40px 10px;
       font-size: 20px;
       text-align: center;
       line-height: 28px;
       letter-spacing: 1.2px;
 
       @media screen and (max-width: 500px) {
-        text-align: left;
         font-size: 14px;
         padding: 10px 0 0;
         line-height: 20px;
@@ -87,7 +91,7 @@
     }
 
     &__img {
-      width: 110%;
+      width: 100%;
       height: 35px;
 
       &-mobile {
@@ -103,6 +107,28 @@
       @media screen and (max-width: 500px) {
         visibility: hidden;
       }
+    }
+  }
+}
+
+.vip-images {
+  margin-top: 40px;
+
+  img {
+    border: 5px solid #8ad2f5;
+    border-radius: 50px;
+    margin-bottom: 25px;
+
+    @media screen and (max-width: 500px) {
+      width: 100%;
+    }
+  }
+
+  &__child {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
     }
   }
 }

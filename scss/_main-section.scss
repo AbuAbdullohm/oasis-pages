@@ -84,6 +84,12 @@
     display: flex;
     align-items: center;
 
+    @media screen and (max-width: 500px) {
+      flex-direction: column-reverse;
+      align-items: start;
+
+    }
+
     h1 {
       font-size: 60px;
       font-weight: bold;
@@ -98,23 +104,22 @@
     }
 
     img {
+      margin-left: 20px;
       width: 90px;
-      position: absolute;
-      transform: translateX(245px) translateY(35px);
 
       @media screen and (max-width: 500px) {
         width: 120px;
-        transform: translateX(0) translateY(-100px);
+        margin-left: 0;
+        margin-bottom: 20px;
       }
     }
   }
 
   a {
-    margin-right: 100px;
+    margin-right: 45px;
   }
 
   &__phone {
-    transform: translateX(55px) translateY(35px);
     padding: 15px;
     border-radius: 50%;
     background-color: #fff;

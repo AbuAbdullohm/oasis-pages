@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gilroy", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 83%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 500px) {
+      width: 95%;
+  }
+}

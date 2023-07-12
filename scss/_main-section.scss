@@ -1,0 +1,130 @@
+.main {
+  width: 100%;
+  height: 700px;
+  background-image: url(../images/VIP-background.png);
+  background-size: cover;
+  background-position: center center;
+  border-radius: 0 0 60px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 20px 50px;
+
+  @media screen and (max-width: 500px) {
+    height: 600px;
+    border-radius: 0 0 40px 40px;
+    padding: 10px;
+  }
+
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    padding: 12px;
+
+    @media screen and (max-width: 500px) {
+      visibility: hidden;
+    }
+
+    &__logo {
+      width: 54px;
+      height: 56px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.main-header__menu {
+  .menu-list {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
+
+    &__item {
+      list-style-type: none;
+
+      a {
+        font-size: 20px;
+        font-weight: 300;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 16px 20px;
+        letter-spacing: 0.8px;
+      }
+    }
+
+    .active {
+      a {
+        color: #0072c9;
+      }
+    }
+  }
+}
+
+.main-content {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 500px) {
+    flex-wrap: wrap;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-size: 60px;
+      font-weight: bold;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+
+      @media screen and (max-width: 500px) {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+    }
+
+    img {
+      width: 90px;
+      position: absolute;
+      transform: translateX(245px) translateY(35px);
+
+      @media screen and (max-width: 500px) {
+        width: 120px;
+        transform: translateX(0) translateY(-100px);
+      }
+    }
+  }
+
+  a {
+    margin-right: 100px;
+  }
+
+  &__phone {
+    transform: translateX(55px) translateY(35px);
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 999;
+
+    @media screen and (max-width: 500px) {
+      transform: translateX(30px) translateY(-150px);
+      position: fixed;
+      right: 60px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+}

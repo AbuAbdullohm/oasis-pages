@@ -212,6 +212,7 @@ body {
   height: 120px;
   background-color: rgba(245, 245, 245, 0.3);
   border-radius: 50px;
+  border: 3px solid rgba(138, 174, 245, 0.3);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   padding: 30px 0;
@@ -259,20 +260,102 @@ body {
 }
 
 .prices {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 .prices-header {
   height: 120px;
-  border-radius: 20px;
-  background-color: #20a6e7;
 }
 .prices-header ul {
   width: 100%;
+  height: 100%;
   list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  border-radius: 20px;
 }
 .prices-header ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  margin-right: 1px;
+  width: 100%;
+  height: 120px;
+  background-color: #20a6e7;
+  color: #ffffff;
+  background-color: #20a6e7;
+  font-size: 28px;
+}
+.prices-header ul li:first-child {
+  border-radius: 20px 0 0 20px;
+}
+.prices-header ul li:last-child {
+  border-radius: 0 20px 20px 0;
+}
+.prices-header ul .active {
+  background-color: #01af1c;
+}
+
+.card {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c7c7c7;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #c7c7c7;
+  padding: 25px 20px;
+  font-size: 22px;
+  align-items: center;
+  text-align: center;
+  z-index: -1;
+}
+.card-header h2:nth-child(2) {
+  margin-left: 130px;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+.card-content .content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  background-color: rgba(138, 210, 245, 0.4);
+  padding: 35px;
+  border-radius: 20px;
+}
+.card-content .content-title {
+  width: 25%;
+  font-size: 32px;
+  align-items: center;
+}
+.card-content .content-price {
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+}
+.card-content .content-price .color-blue {
+  font-size: 36px;
+  font-weight: bold;
+  color: #20a6e7;
+}
+.card-content .content .sale-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  transform: translateX(-80px) translateY(-80px);
+  z-index: 999;
+}
+.card-content .content .sale-icon p {
+  font-size: 25px;
+  font-weight: bold;
+  transform: translateX(-70px);
 }/*# sourceMappingURL=purchases.css.map */

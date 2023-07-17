@@ -311,8 +311,9 @@ body {
 }
 @media screen and (max-width: 500px) {
   .prices-header ul {
+    width: 95%;
     flex-direction: column;
-    margin-top: 20px;
+    margin: 20px auto;
   }
 }
 .prices-header ul li {
@@ -366,8 +367,9 @@ body {
 }
 @media screen and (max-width: 500px) {
   .card {
+    width: 95%;
     padding: 10px;
-    margin-top: 180px;
+    margin: 160px auto 0;
     border-radius: 30px;
   }
 }
@@ -421,7 +423,7 @@ body {
 }
 @media screen and (max-width: 500px) {
   .card-content .content-title {
-    font-size: 16px;
+    font-size: 15px;
     width: 33%;
   }
 }
@@ -437,12 +439,12 @@ body {
 }
 @media screen and (max-width: 500px) {
   .card-content .content-price .color-blue {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 500px) {
   .card-content .content-price {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 .card-content .content .sale-icon {

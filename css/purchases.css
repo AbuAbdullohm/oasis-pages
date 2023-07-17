@@ -180,6 +180,12 @@ body {
   background-image: url(../images/purchases-background.png);
   background-size: cover;
 }
+@media screen and (max-width: 500px) {
+  .main {
+    background-image: url(../images/purchases-background\(mini\).png);
+    background-position: center;
+  }
+}
 
 .main-content__text img {
   transform: translateX(0) translateY(40px);
@@ -206,6 +212,19 @@ body {
   position: relative;
   margin-top: 180px;
 }
+@media screen and (max-width: 500px) {
+  .purchase {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .purchase .background-leaf__left {
+    width: 110px;
+    height: 100px;
+    right: 0;
+    transform: translateX(460px) translateY(-40px) rotate(180deg);
+  }
+}
 .purchase-content {
   width: 85%;
   margin: 0 auto;
@@ -220,17 +239,20 @@ body {
 @media screen and (max-width: 500px) {
   .purchase-content {
     width: 90%;
-    height: 220px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding: 20px;
-    border-radius: 40px;
-    text-align: center;
+    height: 100px;
+    padding: 15px;
+    border-radius: 80px;
   }
 }
 .purchase-content__title {
   text-align: center;
   font-size: 45px;
   color: #8ad2f5;
+}
+@media screen and (max-width: 500px) {
+  .purchase-content__title {
+    font-size: 30px;
+  }
 }
 .purchase .background-leaf__right {
   width: 340px;
@@ -258,9 +280,22 @@ body {
   transform: translateX(20px) translateY(-30px) scale(1.1);
   z-index: -1;
 }
+@media screen and (max-width: 500px) {
+  .purchase .background-leaf__left {
+    transform: translateX(-40px) translateY(-70px) scale(0.4);
+    width: 80px;
+    height: 100px;
+    left: 0;
+  }
+}
 
 .prices {
   margin-top: 60px;
+}
+@media screen and (max-width: 500px) {
+  .prices {
+    margin-top: 160px;
+  }
 }
 .prices-header {
   height: 120px;
@@ -273,6 +308,12 @@ body {
   align-items: center;
   justify-content: space-evenly;
   border-radius: 20px;
+}
+@media screen and (max-width: 500px) {
+  .prices-header ul {
+    flex-direction: column;
+    margin-top: 20px;
+  }
 }
 .prices-header ul li {
   display: flex;
@@ -287,11 +328,28 @@ body {
   background-color: #20a6e7;
   font-size: 28px;
 }
+@media screen and (max-width: 500px) {
+  .prices-header ul li {
+    border-radius: 20px;
+    padding: 20px 0;
+    margin-top: 10px;
+  }
+}
 .prices-header ul li:first-child {
   border-radius: 20px 0 0 20px;
 }
+@media screen and (max-width: 500px) {
+  .prices-header ul li:first-child {
+    border-radius: 20px;
+  }
+}
 .prices-header ul li:last-child {
   border-radius: 0 20px 20px 0;
+}
+@media screen and (max-width: 500px) {
+  .prices-header ul li:last-child {
+    border-radius: 20px;
+  }
 }
 .prices-header ul .active {
   background-color: #01af1c;
@@ -306,6 +364,13 @@ body {
   flex-direction: column;
   border: 1px solid #c7c7c7;
 }
+@media screen and (max-width: 500px) {
+  .card {
+    padding: 10px;
+    margin-top: 180px;
+    border-radius: 30px;
+  }
+}
 .card-header {
   display: flex;
   justify-content: space-between;
@@ -318,6 +383,17 @@ body {
 }
 .card-header h2:nth-child(2) {
   margin-left: 130px;
+}
+@media screen and (max-width: 500px) {
+  .card-header h2:nth-child(2) {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card-header {
+    font-size: 12px;
+    padding: 10px;
+  }
 }
 .card-content {
   display: flex;
@@ -332,10 +408,22 @@ body {
   padding: 35px;
   border-radius: 20px;
 }
+@media screen and (max-width: 500px) {
+  .card-content .content {
+    padding: 15px;
+    margin-top: 15px;
+  }
+}
 .card-content .content-title {
   width: 25%;
   font-size: 32px;
   align-items: center;
+}
+@media screen and (max-width: 500px) {
+  .card-content .content-title {
+    font-size: 16px;
+    width: 33%;
+  }
 }
 .card-content .content-price {
   align-items: center;
@@ -347,12 +435,27 @@ body {
   font-weight: bold;
   color: #20a6e7;
 }
+@media screen and (max-width: 500px) {
+  .card-content .content-price .color-blue {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card-content .content-price {
+    font-size: 16px;
+  }
+}
 .card-content .content .sale-icon {
   position: absolute;
   display: flex;
   align-items: center;
   transform: translateX(-80px) translateY(-80px);
   z-index: 999;
+}
+@media screen and (max-width: 500px) {
+  .card-content .content .sale-icon {
+    visibility: hidden;
+  }
 }
 .card-content .content .sale-icon p {
   font-size: 25px;
